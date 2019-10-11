@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PayComponent } from './pay/pay.component';
+import {MatIconModule} from '@angular/material/icon';
+import { FocusDirective } from './focus.directive';
 
 @NgModule({
   imports: [
@@ -20,10 +23,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatButtonModule,
     MatToolbarModule,
     CommonModule,
-    CrystalLightboxModule
+    CrystalLightboxModule,
+    MatIconModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    PayComponent,
+    FocusDirective
   ],
   providers: [],
   bootstrap: [AppComponent]
