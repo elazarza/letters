@@ -341,7 +341,12 @@
      
     }
   }
-  
+  #buttons-container > div > div.paypal-button.paypal-button-number-0.paypal-button-layout-vertical.paypal-button-shape-rect.paypal-button-number-multiple.paypal-button-env-sandbox.paypal-button-color-gold.paypal-logo-color-blue.paypal-button-clicked {
+    display: none !important;
+  }
+ ::ng-deep .paypal-button-number-0  {
+    display: none !important;
+}
 //   .g-overlay {
 //     min-width: 320px;
 //   }

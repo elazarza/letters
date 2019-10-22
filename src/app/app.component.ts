@@ -30,7 +30,10 @@ export class AppComponent implements OnInit {
 
     // this.top.nativeElement.scrollIntoView( { behavior: 'smooth', block: 'start' });
   }
-
+  appendDiv() {
+    const div = document.querySelector('.overlay-div') as HTMLElement;
+    div.style.display = 'block';
+  }
   ngOnInit() {
     this.innerwidth = window.innerWidth;
     if (this.innerwidth <= 500) {

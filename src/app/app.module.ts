@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatSelectModule} from '@angular/material/select';
@@ -24,7 +24,8 @@ import { FocusDirective } from './focus.directive';
     MatToolbarModule,
     CommonModule,
     CrystalLightboxModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
